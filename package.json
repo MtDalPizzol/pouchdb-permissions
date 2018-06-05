@@ -1,0 +1,21 @@
+{
+  "name": "pouchdb-permissions",
+  "version": "0.0.1",
+  "description": "Easy permission management for PouchDB/CouchDB",
+  "keywords": [
+    "pouchdb",
+    "security"
+  ],
+  "main": "pouchdb-permissions.js",
+  "author": "Matheus Dal'Pizzol <matheusdalpizzol@gmail.com>",
+  "homepage": "https://github.com/MtDalPizzol/pouchdb-permissions",
+  "bugs": "https://github.com/MtDalPizzol/pouchdb-permissions/issues",
+  "repository": {
+    "url": "https://github.com/MtDalPizzol/pouchdb-permissions.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
