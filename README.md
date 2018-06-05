@@ -1,4 +1,4 @@
-#pouchdb-permissions
+# pouchdb-permissions
 
 This plugin enables you to easily manipulate the `_security` document of a database in PouchDB/CouchDB, on the fly and with a super flexible API.
 
@@ -25,9 +25,9 @@ PouchDB.plugin(PouchDBPermissions)
 const db = new PouchDB('http://localhost:5984')
 ```
 
-##API
+## API
 
-###db.addAdmins(names, roles)
+### db.addAdmins(names, roles)
 
 * **Arguments**:
   * **names**: It can be a `String`, an `Array` of strings, an `Object` or `null`.
@@ -54,7 +54,7 @@ db.addAdmins({
 })
 ```
 
-###db.removeAdmins(names, roles)
+### db.removeAdmins(names, roles)
 
 * **Arguments**:
   * **names**: It can be a `String`, an `Array` of strings, an `Object` or `null`.
@@ -81,7 +81,7 @@ db.removeAdmins({
 })
 ```
 
-###db.setAdmins(names, roles)
+### db.setAdmins(names, roles)
 
 This method completely replace the `admins.names` **AND** `admins.roles` lists.
 
@@ -110,7 +110,7 @@ db.setAdmins({
 })
 ```
 
-###db.addMembers(names, roles)
+### db.addMembers(names, roles)
 
 * **Arguments**:
   * **names**: It can be a `String`, an `Array` of strings, an `Object` or `null`.
@@ -137,7 +137,7 @@ db.addMembers({
 })
 ```
 
-###db.removeMembers(names, roles)
+### db.removeMembers(names, roles)
 
 * **Arguments**:
   * **names**: It can be a `String`, an `Array` of strings, an `Object` or `null`.
@@ -164,7 +164,7 @@ db.removeMembers({
 })
 ```
 
-###db.setMembers(names, roles)
+### db.setMembers(names, roles)
 
 This method completely replace the `members.names` **AND** `members.roles` lists.
 
@@ -193,7 +193,7 @@ db.setMembers({
 })
 ```
 
-###db.addNames(names, groups)
+### db.addNames(names, groups)
 
 * **Arguments**:
   * **names**: It can be a `String` or an `Array` of strings.
@@ -211,7 +211,7 @@ db.addNames(
 )
 ```
 
-###db.removeNames(names, groups)
+### db.removeNames(names, groups)
 
 * **Arguments**:
   * **names**: It can be a `String` or an `Array` of strings.
@@ -229,7 +229,7 @@ db.removeNames(
 )
 ```
 
-###db.setNames(names, groups)
+### db.setNames(names, groups)
 
 * **Arguments**:
   * **names**: It can be a `String` or an `Array` of strings.
@@ -247,7 +247,7 @@ db.setNames(
 )
 ```
 
-###db.addRoles(roles, groups)
+### db.addRoles(roles, groups)
 
 * **Arguments**:
   * **roles**: It can be a `String` or an `Array` of strings.
@@ -265,7 +265,7 @@ db.addRoles(
 )
 ```
 
-###db.removeRoles(roles, groups)
+### db.removeRoles(roles, groups)
 
 * **Arguments**:
   * **roles**: It can be a `String` or an `Array` of strings.
@@ -283,7 +283,7 @@ db.removeRoles(
 )
 ```
 
-###db.setRoles(roles, groups)
+### db.setRoles(roles, groups)
 
 * **Arguments**:
   * **roles**: It can be a `String` or an `Array` of strings.
@@ -301,7 +301,7 @@ db.setRoles(
 )
 ```
 
-###db.addOwners(names)
+### db.addOwners(names)
 
 * **Arguments**:
   * **names**: It can be a `String` or an `Array` of strings.
@@ -313,7 +313,7 @@ db.addOwners('joey') // Add joey to admins.names and members.names
 db.addOwners(['ted', 'rick']) // Add ted and rick to admins.names and members.names
 ```
 
-###db.removeOwners(names)
+### db.removeOwners(names)
 
 * **Arguments**:
   * **names**: It can be a `String` or an `Array` of strings.
@@ -325,7 +325,7 @@ db.removeOwners('joey') // Remove joey from admins.names and members.names
 db.removeOwners(['ted', 'rick']) // Remove ted and rick from admins.names and members.names
 ```
 
-###db.setOwners(names)
+### db.setOwners(names)
 
 This method completely replace the `admins.names` **AND** `members.names` lists.
 
